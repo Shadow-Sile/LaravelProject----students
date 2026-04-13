@@ -134,4 +134,4 @@ php artisan serve
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 { **Autor** }
-Proyecto realizado por un estudiante de 19 años del ciclo formativo de Desarrollo de Aplicaciones Web como práctica de desarrollo en Laravel y el patrón MVC.
+Proyecto realizado por un estudiante de 18 años del ciclo formativo de Desarrollo de Aplicaciones Web como práctica de desarrollo en Laravel y el patrón MVC.
