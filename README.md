@@ -21,9 +21,11 @@ Es un **CRUD** (Create, Read, Update, Delete) para administrar alumnos. A travé
 El proyecto sigue la arquitectura **MVC (Modelo - Vista - Controlador)** que ofrece Laravel:
 
 
+
 { **Modelo — `Student.php` }
 Define la entidad `Student` y su conexión con la tabla `students` de la base de datos. Utiliza el trait `HasFactory` para poder generar datos de prueba con factories.
 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 { **Controlador — `StudentController.php`** }
 Contiene toda la lógica de negocio. Cada método del controlador corresponde a una acción del CRUD:
@@ -52,13 +54,13 @@ Las vistas están hechas con **Blade** (el motor de plantillas de Laravel) y usa
 - `show.blade.php` — vista detalle de un alumno
 - `edit.blade.php` — formulario pre-rellenado para editar
 
-
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 { **Rutas — `routes/web.php`** }
 
 Las rutas están definidas manualmente y cubren todos los endpoints necesarios para el CRUD, usando los métodos HTTP correctos (`GET`, `POST`, `PUT`, `DELETE`).
 
-
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 { **Migración — `student_migration.php`** }
 Crea la tabla `students` en la base de datos con los campos:
@@ -69,12 +71,12 @@ Crea la tabla `students` en la base de datos con los campos:
 - `address` — dirección postal
 - `timestamps` — fechas de creación y actualización automáticas
 
-
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 { **Seeder y Factory** }
 Se incluye un `StudentSeeder` junto a un `StudentFactory` para poblar la base de datos con datos de prueba de forma rápida durante el desarrollo.
 
-
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 { **Validaciones** }
 
@@ -83,7 +85,8 @@ El formulario de alta y edición valida los datos antes de guardarlos:
 - `name` — obligatorio, máximo 10 caracteres
 - `email` — obligatorio, formato de email válido
 - `address` — obligatorio, entre 10 y 100 caracteres
-
+  
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 { **Internacionalización** }
 
