@@ -20,8 +20,10 @@ Es un **CRUD** (Create, Read, Update, Delete) para administrar alumnos. A travé
 
 El proyecto sigue la arquitectura **MVC (Modelo - Vista - Controlador)** que ofrece Laravel:
 
+
 { **Modelo — `Student.php` }
 Define la entidad `Student` y su conexión con la tabla `students` de la base de datos. Utiliza el trait `HasFactory` para poder generar datos de prueba con factories.
+
 
 { **Controlador — `StudentController.php`** }
 Contiene toda la lógica de negocio. Cada método del controlador corresponde a una acción del CRUD:
@@ -40,6 +42,7 @@ Contiene toda la lógica de negocio. Cada método del controlador corresponde a 
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+
 { **Vistas — `resources/views/students/`** }
 
 Las vistas están hechas con **Blade** (el motor de plantillas de Laravel) y usan **Bootstrap 5** con iconos de Bootstrap Icons para darle un aspecto limpio y profesional.
@@ -50,9 +53,11 @@ Las vistas están hechas con **Blade** (el motor de plantillas de Laravel) y usa
 - `edit.blade.php` — formulario pre-rellenado para editar
 
 
+
 { **Rutas — `routes/web.php`** }
 
 Las rutas están definidas manualmente y cubren todos los endpoints necesarios para el CRUD, usando los métodos HTTP correctos (`GET`, `POST`, `PUT`, `DELETE`).
+
 
 
 { **Migración — `student_migration.php`** }
@@ -65,8 +70,10 @@ Crea la tabla `students` en la base de datos con los campos:
 - `timestamps` — fechas de creación y actualización automáticas
 
 
+
 { **Seeder y Factory** }
 Se incluye un `StudentSeeder` junto a un `StudentFactory` para poblar la base de datos con datos de prueba de forma rápida durante el desarrollo.
+
 
 
 { **Validaciones** }
@@ -125,5 +132,3 @@ php artisan serve
 
 { **Autor** }
 Proyecto realizado por un estudiante de 19 años del ciclo formativo de Desarrollo de Aplicaciones Web como práctica de desarrollo en Laravel y el patrón MVC.
-
-Proyecto realizado por un estudiante de **19 años** del ciclo formativo de Desarrollo de Aplicaciones Web como práctica de introducción a Laravel y el patrón MVC.
